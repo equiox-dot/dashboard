@@ -1,103 +1,17 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Northstar — Monthly Media Report</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <main class="shell">
-      <header class="topbar">
-        <div class="brand"><span class="brand-mark"><i></i><i></i><i></i></span>northstar</div>
-        <div class="report-meta"><span class="pulse"></span>MONTHLY PERFORMANCE REPORT <span class="meta-dot">·</span> AUGUST 2025</div>
-        <button class="export" id="exportButton"><span>↓</span> Export report</button>
-      </header>
-
-      <section class="hero">
-        <div>
-          <p class="eyebrow">THE PULSE / 08.25</p>
-          <h1>Efficiency up.<br /><em>Momentum on.</em></h1>
-        </div>
-        <div class="hero-summary">
-          <p>August closed with stronger acquisition efficiency across the paid media mix — while maintaining healthy scale.</p>
-          <div class="date-selector" aria-label="Selected reporting period">
-            <button id="previousMonth" aria-label="Previous month">←</button>
-            <span>Aug 01 — Aug 31, 2025</span>
-            <button id="nextMonth" aria-label="Next month">→</button>
-          </div>
-        </div>
-      </section>
-
-      <section class="metrics" aria-label="Performance summary">
-        <article class="metric featured">
-          <p class="metric-label">Total ad spend</p>
-          <div class="metric-value">$48,260<span>.42</span></div>
-          <div class="metric-foot"><strong class="up">↗ 12.4%</strong><span>vs. previous month</span></div>
-        </article>
-        <article class="metric">
-          <p class="metric-label">Blended ROAS</p>
-          <div class="metric-value">4.18<span>x</span></div>
-          <div class="metric-foot"><strong class="up">↗ 18.6%</strong><span>vs. previous month</span></div>
-        </article>
-        <article class="metric">
-          <p class="metric-label">Purchases</p>
-          <div class="metric-value">1,428</div>
-          <div class="metric-foot"><strong class="up">↗ 9.2%</strong><span>vs. previous month</span></div>
-        </article>
-        <article class="metric">
-          <p class="metric-label">Cost per purchase</p>
-          <div class="metric-value">$33<span>.80</span></div>
-          <div class="metric-foot"><strong class="up">↘ 2.6%</strong><span>vs. previous month</span></div>
-        </article>
-      </section>
-
-      <section class="grid-main">
-        <article class="panel performance-panel">
-          <div class="panel-heading">
-            <div><p class="eyebrow">PERFORMANCE TREND</p><h2>Revenue & spend</h2></div>
-            <div class="legend"><span><i class="legend-revenue"></i>Revenue</span><span><i class="legend-spend"></i>Spend</span></div>
-          </div>
-          <div class="chart-wrap">
-            <div class="y-axis"><span>$32k</span><span>$24k</span><span>$16k</span><span>$8k</span><span>$0</span></div>
-            <svg class="line-chart" viewBox="0 0 760 248" preserveAspectRatio="none" role="img" aria-label="Revenue and spend grew across August">
-              <defs><linearGradient id="fill" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#ff644d" stop-opacity=".20"/><stop offset="1" stop-color="#ff644d" stop-opacity="0"/></linearGradient></defs>
-              <g class="chart-grid"><path d="M0 10H760M0 67H760M0 124H760M0 181H760M0 238H760" /></g>
-              <path class="revenue-area" d="M0 178 C25 172 40 160 61 169 S100 141 122 150 S160 128 183 140 S220 110 244 122 S280 130 306 107 S345 86 367 101 S405 70 428 79 S463 74 489 58 S530 38 551 55 S592 31 612 44 S650 12 673 30 S716 8 760 18 L760 238 L0 238Z" />
-              <path class="revenue-line" d="M0 178 C25 172 40 160 61 169 S100 141 122 150 S160 128 183 140 S220 110 244 122 S280 130 306 107 S345 86 367 101 S405 70 428 79 S463 74 489 58 S530 38 551 55 S592 31 612 44 S650 12 673 30 S716 8 760 18" />
-              <path class="spend-line" d="M0 202 C25 196 44 191 61 196 S102 182 122 188 S160 170 183 181 S223 167 244 174 S283 163 306 169 S345 151 367 162 S405 147 428 151 S465 143 489 150 S529 132 551 140 S593 129 612 133 S651 116 673 127 S716 112 760 115" />
-              <circle class="chart-dot" cx="760" cy="18" r="5" />
-            </svg>
-            <div class="x-axis"><span>Aug 01</span><span>Aug 08</span><span>Aug 15</span><span>Aug 22</span><span>Aug 31</span></div>
-          </div>
-          <div class="chart-totals"><span><b>$201,748</b> attributed revenue</span><span><b>$48,260</b> media investment</span></div>
-        </article>
-
-        <aside class="panel insight-panel">
-          <div class="panel-heading"><div><p class="eyebrow">EXECUTIVE NOTE</p><h2>What moved the needle</h2></div><span class="star">✦</span></div>
-          <p class="insight-copy">Creative iteration and tighter audience signals helped unlock a more profitable month.</p>
-          <div class="highlight"><span class="highlight-number">+18.6%</span><span>lift in blended ROAS</span></div>
-          <ul class="insight-list"><li><span class="bullet coral"></span><span><b>Meta prospecting</b> scaled with 23% lower CPA.</span></li><li><span class="bullet yellow"></span><span><b>Google Brand</b> protected high-intent demand at 8.2x ROAS.</span></li></ul>
-          <button class="text-button" id="insightsButton">Read full insights <span>→</span></button>
-        </aside>
-      </section>
-
-      <section class="grid-secondary">
-        <article class="panel channel-panel"><div class="panel-heading"><div><p class="eyebrow">CHANNEL MIX</p><h2>Where the growth came from</h2></div><button class="menu-button" aria-label="More options">•••</button></div>
-          <div class="channel-content"><div class="donut" aria-label="Spend: Meta 57 percent, Google 43 percent"><div class="donut-label"><b>$48.3k</b><span>spend</span></div></div>
-          <div class="channel-bars"><div><div class="channel-label"><span class="channel-icon meta">∞</span><b>Meta Ads</b><strong>57%</strong></div><div class="bar"><i style="width:57%"></i></div><small>$27,604 spend · 3.86x ROAS</small></div><div><div class="channel-label"><span class="channel-icon google">G</span><b>Google Ads</b><strong>43%</strong></div><div class="bar"><i style="width:43%"></i></div><small>$20,656 spend · 4.61x ROAS</small></div></div></div>
-        </article>
-        <article class="panel table-panel"><div class="panel-heading"><div><p class="eyebrow">CAMPAIGN LEADERBOARD</p><h2>Top performers</h2></div><button class="text-button compact">View all <span>→</span></button></div>
-          <div class="table"><div class="tr th"><span>CAMPAIGN</span><span>SPEND</span><span>ROAS</span><span></span></div><div class="tr"><span><i class="mini-dot meta-dot-bg"></i>Meta · Evergreen UGC</span><span>$11,820</span><strong>5.12x</strong><span class="trend up">↗ 22%</span></div><div class="tr"><span><i class="mini-dot google-dot"></i>Google · Brand Search</span><span>$7,314</span><strong>8.20x</strong><span class="trend up">↗ 16%</span></div><div class="tr"><span><i class="mini-dot meta-dot-bg"></i>Meta · Retargeting</span><span>$6,748</span><strong>4.84x</strong><span class="trend up">↗ 8%</span></div></div>
-        </article>
-      </section>
-
-      <footer><span>Prepared for <b>Maison April</b></span><span>Confidential · Northstar Media</span></footer>
-    </main>
-    <div class="toast" id="toast" role="status">Report export prepared</div>
-    <script src="script.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1e202c" />
+  <title>Northstar Client Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main id="app" class="app-shell"></main>
+  <script src="script.js"></script>
+</body>
 </html>
