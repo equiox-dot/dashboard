@@ -1,4 +1,4 @@
-# Northstar client reporting portal
+# Convert8 client reporting portal
 
 A static prototype of a password-protected, multi-client Google Ads and Meta Ads reporting portal. Each client can sign in and browse monthly reports beginning in September 2026.
 
@@ -13,20 +13,14 @@ Open [http://localhost:4173](http://localhost:4173).
 
 ## Demo client access
 
-There are ten seeded client accounts. Their login details follow this pattern:
+There are four seeded client accounts for the current client roster:
 
 | Client | Email | Password |
 | --- | --- | --- |
-| Maison April | `maison-april@client.northstar.co` | `Northstar1!` |
-| Atlas Wellness | `atlas-wellness@client.northstar.co` | `Northstar2!` |
-| Flora Studio | `flora-studio@client.northstar.co` | `Northstar3!` |
-| Solace Home | `solace-home@client.northstar.co` | `Northstar4!` |
-| Northline Coffee | `northline-coffee@client.northstar.co` | `Northstar5!` |
-| Luma Skin | `luma-skin@client.northstar.co` | `Northstar6!` |
-| Goodfolk Market | `goodfolk-market@client.northstar.co` | `Northstar7!` |
-| Sunday Racket | `sunday-racket@client.northstar.co` | `Northstar8!` |
-| Morrow Cycles | `morrow-cycles@client.northstar.co` | `Northstar9!` |
-| Cinder Travel | `cinder-travel@client.northstar.co` | `Northstar10!` |
+| Bliss Flowers | `bliss-flowers@client.convert8.io` | `Convert81!` |
+| NOVAS Singapore | `novas-singapore@client.convert8.io` | `Convert82!` |
+| Suuco | `suuco@client.convert8.io` | `Convert83!` |
+| TWFP | `twfp@client.convert8.io` | `Convert84!` |
 
 ## Important security note
 
